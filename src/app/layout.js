@@ -1,6 +1,6 @@
 import './globals.css';
 import { Oleo_Script, Cormorant_Garamond, Poppins, Playfair_Display, Rouge_Script } from 'next/font/google';
-import Navbar from './components/Navbar';
+import Navbar from './components/navbar';
 
 // Load fonts using next/font/google
 const oleo = Oleo_Script({
