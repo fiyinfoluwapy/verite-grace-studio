@@ -1,0 +1,6 @@
+Hex	Use Case	Name Suggestion
+#47405D	Primary text / backgrounds	Deep Plum Gray
+#D24715	Accent / CTA buttons	Burnt Orange
+#DD8036	Secondary buttons / highlights	Warm Orange
+#DDAF72	Subtle highlights / borders	Soft Gold
+#2F4B71	Section backgrounds / overlays	Muted Navy
