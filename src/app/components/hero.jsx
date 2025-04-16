@@ -21,7 +21,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative w-full min-h-[90vh] overflow-hidden bg-[#2F4B71] mt-24 sm:mt-20 md:mt-12">
+    <section className="relative w-full min-h-[90vh] overflow-hidden bg-[#2F4B71] mt-24 sm:mt-12 md:mt-12">
       {/* Background and Overlay */}
       <div className="absolute inset-0 z-0">
         <img

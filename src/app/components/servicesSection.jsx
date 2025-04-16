@@ -55,7 +55,7 @@ const ServicesSection = () => {
       title: 'Nails (Manicure & Pedicure)',
       description:
         'Pampering manicure and pedicure services to keep your hands and feet looking and feeling great.',
-      icon: <Scissors className="h-8 w-8 text-[#DD8036]" />, // Placeholder, change to relevant icon
+      icon: <Scissors className="h-8 w-8 text-[#DD8036]" />, 
       image:
         'https://i.pinimg.com/736x/07/ee/d3/07eed3c62c581ab1e60d52bc9dcb30ed.jpg',
     },
@@ -63,7 +63,7 @@ const ServicesSection = () => {
       title: 'Lash Fixing',
       description:
         'Enhance your eyes with beautifully applied eyelash extensions for a natural or dramatic look.',
-      icon: <Scissors className="h-8 w-8 text-[#DD8036]" />, // Placeholder, change to relevant icon
+      icon: <Scissors className="h-8 w-8 text-[#DD8036]" />, 
       image:
         'https://i.pinimg.com/736x/02/bd/f3/02bdf3dc8f68f4b068c426a3deb7d4a1.jpg',
     },

@@ -5,10 +5,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 
 const navLinks = [
-  { name: "Home", href: "#" },
+  { name: "Home", href: '/' },
   { name: "Services", href: "#services" },
   { name: "Gallery", href: "#gallery" },
-  { name: "Booking", href: "#booking" },
+  { name: "Booking", href: "/bookings" }, 
   { name: "Contact", href: "#contact" },
 ];
 
@@ -45,7 +45,7 @@ export default function Navbar() {
         <div className="md:hidden">
           <button onClick={toggleMenu} aria-label="Toggle Menu">
             <img
-              src={isMenuOpen ? "/icons/close-menu.png" : "/icons/open-menu.gif"} // GIF for open menu
+              src={isMenuOpen ? "/icons/close-menu.png" : "/icons/open-menu.gif"}
               alt="Menu Icon"
               className="w-8 h-8 md:w-10 md:h-10 object-contain"
             />
@@ -60,9 +60,11 @@ export default function Navbar() {
               alt="Logo Icon"
               className="w-8 h-8 object-contain"
             />
-            <h1 className="text-3xl md:text-2xl font-bold tracking-wide font-rouge-script text-[#47405D]">
-              Vérité Grace Studio
-            </h1>
+            <Link href="/" scroll={true} passHref>
+              <h1 className="text-3xl md:text-2xl font-bold tracking-wide font-rouge-script text-[#47405D] cursor-pointer">
+                Vérité Grace Studio
+              </h1>
+            </Link>
           </div>
           <p className="text-sm text-[#47405D] mt-1 font-inter ">
             Where true, natural beauty meets elegance and grace.
