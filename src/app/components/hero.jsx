@@ -1,13 +1,28 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import { CalendarIcon } from "lucide-react";
 
 export default function HeroSection() {
+  const router = useRouter();
+
+  // Navigate to bookings page when "Book Appointment" is clicked
+  const handleBookingClick = () => {
+    router.push('/bookings');
+  };
+
+  // Scroll to services section when "Explore Services" is clicked
+  const handleExploreServices = () => {
+    const servicesSection = document.getElementById('services-section');
+    if (servicesSection) {
+      servicesSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="relative w-full min-h-[90vh] overflow-hidden bg-[#2F4B71] mt-24 sm:mt-20 md:mt-12">
-
-      {/* Background image with overlay */}
+      {/* Background and Overlay */}
       <div className="absolute inset-0 z-0">
         <img
           src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=2070&q=80"
@@ -26,24 +41,25 @@ export default function HeroSection() {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-light text-[#DDAF72] leading-tight mb-6">
-            Your Journey to <span className="italic text-white">Tranquility</span> Begins
-            Here
+            Your Journey to <span className="italic text-white">Tranquility</span> Begins Here
           </h1>
           <p className="text-lg md:text-xl text-white/90 mb-8 font-light">
-            Indulge in our premium spa treatments and beauty services designed
-            to rejuvenate your body and soul.
+            Indulge in our premium spa treatments and beauty services designed to rejuvenate your body and soul.
           </p>
+
           <div className="flex flex-col sm:flex-row gap-4">
-            {/* Primary CTA - Burnt Orange */}
+            {/* Book Appointment Button */}
             <button
+              onClick={handleBookingClick}
               className="px-6 py-3 rounded-md flex items-center justify-center transition-all duration-300 font-medium text-sm bg-[#D24715] hover:bg-[#b93e11] text-white"
             >
               <CalendarIcon className="w-5 h-5 mr-2" />
               Book Appointment
             </button>
 
-            {/* Secondary CTA - Warm Orange with Soft Gold border */}
+            {/* Explore Services Button */}
             <button
+              onClick={handleExploreServices}
               className="px-6 py-3 rounded-md flex items-center justify-center transition-all duration-300 font-medium text-sm bg-[#DD8036] hover:bg-[#e88e43] text-white border border-[#DDAF72]"
             >
               Explore Services

@@ -1,9 +1,13 @@
-import React from 'react';
+import HeroSection from './components/hero';
+import AboutSection from './components/about';
+import ServicesSection from './components/servicesSection';
 
-export default function HomePage() {
+export default function Home() {
   return (
-    <div>
-      <p>Welcome to the home page!</p>
-    </div>
+    <>
+      <HeroSection />
+      <AboutSection />
+      <ServicesSection />
+    </>
   );
 }
