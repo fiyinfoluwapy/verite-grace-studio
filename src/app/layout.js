@@ -1,6 +1,10 @@
 import './globals.css';
 import { Oleo_Script, Cormorant_Garamond, Poppins, Playfair_Display, Rouge_Script } from 'next/font/google';
 import Navbar from './components/navbar';
+import HeroSection from './components/hero';
+import AboutSection from './components/about';
+import ServicesSection from './components/servicesSection';
+
 
 // Load fonts using next/font/google
 const oleo = Oleo_Script({
@@ -37,6 +41,9 @@ const rougeScript = Rouge_Script({
 export const metadata = {
   title: 'Vérité Grace Studio',
   description: 'Unisex salon gallery and booking site',
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -44,6 +51,9 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${playfair.variable} ${poppins.variable} ${cormorant.variable} ${oleo.variable} ${rougeScript.variable}`}>
       <body className="bg-white text-gray-800" style={{ fontFamily: 'var(--font-poppins)' }}>
         <Navbar />
+        <HeroSection />
+        <AboutSection />
+        <ServicesSection />
         <main>{children}</main>
       </body>
     </html>
