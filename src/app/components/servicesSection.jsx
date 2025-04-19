@@ -82,10 +82,10 @@ const ServicesSection = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-[#47405D] text-3xl md:text-4xl font-light mb-4 font-serif">
-            Our <span className="font-semibold">Premium Services</span>
+            Our <span className="font-semibold font-playfair">Premium Services</span>
           </h2>
           <div className="h-1 w-24 bg-[#DD8036] mx-auto mb-6"></div>
-          <p className="text-[#47405D] max-w-2xl mx-auto">
+          <p className="text-[#47405D] max-w-2xl mx-auto font-poppins">
             Discover our carefully curated selection of treatments designed to
             restore, rejuvenate, and revitalize your body and spirit.
           </p>

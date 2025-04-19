@@ -7,6 +7,7 @@ import {
   Rouge_Script,
 } from 'next/font/google';
 import Navbar from './components/navbar';
+import Footer from './components/footer';
 
 // Load fonts
 const oleo = Oleo_Script({ variable: '--font-oleo', subsets: ['latin'], weight: ['400', '700'] });
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
       <body className="bg-white text-gray-800" style={{ fontFamily: 'var(--font-poppins)' }}>
         <Navbar />
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );

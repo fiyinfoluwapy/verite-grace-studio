@@ -1,8 +1,9 @@
 import React from 'react'
+import Link from 'next/link'
 
 const ServiceCard = ({ title, description, icon, image }) => {
   return (
-    <div className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
+    <div className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col h-full" id='services'>
       <div className="relative h-48">
         <img src={image} alt={title} className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-[#47405D]/30"></div>
@@ -10,12 +11,15 @@ const ServiceCard = ({ title, description, icon, image }) => {
       <div className="p-6 flex flex-col flex-grow">
         <div className="flex items-center mb-4">
           <div className="p-2 rounded-full bg-[#47405D]/10 mr-4">{icon}</div>
-          <h3 className="text-xl font-medium text-[#47405D]">{title}</h3>
+          <h3 className="text-xl font-medium text-[#47405D] ">{title}</h3>
         </div>
-        <p className="text-[#47405D]/80 mb-6 flex-grow">{description}</p>
+        <p className="text-[#47405D]/80 mb-6 flex-grow font-cormorant">{description}</p>
         <div className="mt-auto">
-          <div className="flex items-center text-[#DD8036] font-medium">
-            <span>Learn More</span>
+          <Link
+            href="/bookings"
+            className="flex items-center text-[#DD8036] font-medium active:scale-95 transition-transform duration-200 font-poppins text-shadow-lg"
+          >
+            <span>Let's gooo !!!</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5 ml-2"
@@ -28,7 +32,7 @@ const ServiceCard = ({ title, description, icon, image }) => {
                 clipRule="evenodd"
               />
             </svg>
-          </div>
+          </Link>
           <div className="h-0.5 w-16 bg-[#DDAF72] mt-2"></div>
         </div>
       </div>

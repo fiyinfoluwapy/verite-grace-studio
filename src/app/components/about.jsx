@@ -34,19 +34,19 @@ const AboutSection = () => {
           </motion.div>
 
           <motion.div variants={fadeInUp} className="w-full md:w-1/2">
-            <h2 className="text-[#47405D] text-3xl md:text-4xl font-light mb-6 font-serif">
-              Discover <span className="font-semibold">Tranquility</span>
+            <h2 className="text-[#47405D] text-3xl md:text-4xl font-light mb-6 font-cormorant">
+              Discover <span className="font-semibold font-playfair">Tranquility</span>
             </h2>
             <div className="h-1 w-24 bg-[#DD8036] mb-8"></div>
 
-            <motion.p variants={fadeInUp} className="text-[#47405D] mb-6 text-lg">
-              Welcome to Serenity Haven, where luxury meets wellness in a
+            <motion.p variants={fadeInUp} className="text-[#47405D] mb-6 text-lg font-cormorant">
+              Welcome to Vérité Grace Studio, where luxury meets wellness in a
               harmonious retreat from the everyday world. Our sanctuary is
               designed to nurture your body, mind, and spirit through carefully
               curated treatments and rituals.
             </motion.p>
 
-            <motion.p variants={fadeInUp} className="text-[#47405D] mb-8">
+            <motion.p variants={fadeInUp} className="text-[#47405D] mb-8 font-cormorant">
               Founded in 2010, our spa combines ancient healing traditions with
               modern techniques to deliver transformative experiences that
               restore balance and promote well-being. Our team of expert
