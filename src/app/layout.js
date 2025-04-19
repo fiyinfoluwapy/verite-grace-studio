@@ -18,7 +18,7 @@ const rougeScript = Rouge_Script({ variable: '--font-rouge-script', subsets: ['l
 
 export const metadata = {
   title: 'Vérité Grace Studio',
-  description: 'Unisex salon gallery and booking site',
+  description: 'Unisex salon booking site',
   icons: {
     icon: "/favicon.png",
   },
