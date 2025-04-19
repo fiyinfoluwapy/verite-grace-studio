@@ -43,7 +43,7 @@ export default function HeroSection() {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-light text-[#DDAF72] leading-tight mb-6">
             Your Journey to <span className="italic text-white">Tranquility</span> Begins Here
           </h1>
-          <p className="text-lg md:text-xl text-white/90 mb-8 font-light">
+          <p className="text-lg md:text-xl text-white/90 mb-8 font-light font-cormorant">
             Indulge in our premium spa treatments and beauty services designed to rejuvenate your body and soul.
           </p>
 
